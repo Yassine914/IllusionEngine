@@ -1,4 +1,4 @@
-# NonRealityEngine
+# IllusionEngine
 
 A 3D stylized game engine, written in C++ and OpenGL.
 
