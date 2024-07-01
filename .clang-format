@@ -1,0 +1,23 @@
+BasedOnStyle: Microsoft
+
+TabWidth: 4
+IndentWidth: 4
+AccessModifierOffset: 0
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: true
+  AfterStruct: true
+  AfterNamespace: false
+  AfterClass: true
+
+AlignAfterOpenBracket: true
+
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 0
+
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLambdasOnASingleLine: Inline
+
+AllowAllParametersOfDeclarationOnNextLine: false

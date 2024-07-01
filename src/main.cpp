@@ -1,6 +1,6 @@
-#include <iostream>
+#include "core/logger.h"
 
 int main()
 {
-    std::cout << "hello world" << std::endl;
+    logger::LogInfo("hello, world");
 }
