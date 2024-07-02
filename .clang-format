@@ -21,3 +21,4 @@ AllowShortIfStatementsOnASingleLine: WithoutElse
 AllowShortLambdasOnASingleLine: Inline
 
 AllowAllParametersOfDeclarationOnNextLine: false
+SpaceBeforeParens: false

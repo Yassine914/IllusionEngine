@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 enum class LogLevel
 {
