@@ -1,0 +1,34 @@
+{
+    "editor.formatOnSave": true,
+    "clang-format.executable": "clang-format",
+    "clang-format.language.cpp.enable": true,
+    "C_Cpp.errorSquiggles": "disabled",
+    // highlight keywords
+    "todohighlight.isEnable": true,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO:",
+            "color": "red",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        {
+            "text": "HACK:",
+            "color": "#ff6600",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+        },
+        {
+            "text": "NOTE:",
+            "color": "#66ff00",
+            "backgroundColor": "rgba(0, 0, 0, 0)"
+        }
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "hide-files.files": []
+}
