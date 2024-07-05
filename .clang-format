@@ -22,3 +22,6 @@ AllowShortLambdasOnASingleLine: Inline
 
 AllowAllParametersOfDeclarationOnNextLine: false
 SpaceBeforeParens: false
+
+PPIndentWidth: 4
+IndentPPDirectives: BeforeHash
