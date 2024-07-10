@@ -22,13 +22,13 @@ typedef char b8;
 #define false 0
 
 // define static assertions
-#if defined(__clang__) || defined(__gcc__)
+#if defined(__clang__) || defined(__gcc__) || defined(__GNUC__)
     #define ST_ASSERT _Static_assert
 #else
     #define ST_ASSERT static_assert
 #endif
 
-// static assertion macros for type sizes
+// static assertions for type sizes
 ST_ASSERT(sizeof(u8) == 1, "expected u8 to be 1 byte.");
 ST_ASSERT(sizeof(u16) == 2, "expected u16 to be 2 bytes.");
 ST_ASSERT(sizeof(u32) == 4, "expected u32 to be 4 bytes.");
@@ -64,11 +64,15 @@ ST_ASSERT(sizeof(f64) == 8, "expected f64 to be 8 bytes.");
 
 // shared lib defenitions
 #ifdef IEXPORT
-// exports
-    #define IAPI __declspec(dllexport)
-// imports
+    // exports
+    #ifdef IPLATFORM_WINDOWS
+        #define IAPI __declspec(dllexport)
+    #else
+        #define IAPI __attribute__((visibility("default")))
+    #endif
 #else
-    #ifdef IIMPORT
+    // imports
+    #ifdef IPLATFORM_WINDOWS
         #define IAPI __declspec(dllimport)
     #else
         #define IAPI

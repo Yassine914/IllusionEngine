@@ -13,11 +13,11 @@ REM echo "files: " %cppFiles%
 
 SET assembly=sandbox
 
-SET compilerFlags= -g
+SET compilerFlags=
 REM -Wall -Werror
 
 REM add source file dirs
-SET includeFlags=-Isrc -I../engine/src/
+SET includeFlags=-I../engine/src/
 
 REM add libraries to link
 SET linkerFlags=-L../bin/ -lengine
@@ -28,3 +28,5 @@ SET defines=-D_DEBUG -DIIMPORT
 ECHO building %assembly%...
 
 clang++ %cppFiles% %compilerFlags% -o ../bin/%assembly%.exe %defines% %includeFlags% %linkerFlags%
+
+ECHO %assembly% building complete with no errors.

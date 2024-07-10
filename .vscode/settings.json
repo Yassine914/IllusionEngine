@@ -28,7 +28,22 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        ".gitmodules": true,
+        ".gitignore": true,
+        "LICENSE": true,
+        "README.md": true,
+        ".clang-format": true,
     },
-    "hide-files.files": []
+    "hide-files.files": [
+        ".gitmodules",
+        ".gitignore",
+        "LICENSE",
+        "README.md",
+        ".clang-format",
+        ".vscode"
+    ],
+    "C_Cpp.default.includePath": [
+        "G:\\Projects\\CodeProjects\\IllusionEngine\\engine\\src\\"
+    ]
 }
